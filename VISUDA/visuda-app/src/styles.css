@@ -1,0 +1,101 @@
+/* src/styles.css */
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .main-content {
+    padding: 16px;
+    background-color: #f0f0f0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .table-header {
+    background-color: #001f3f; /* Warna latar belakang biru gelap */
+    color: white; /* Warna teks putih */
+  }
+  
+  .table-row:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Warna latar belakang abu-abu muda untuk baris ganjil */
+  }
+  
+  .table-row:nth-of-type(even) {
+    background-color: #ffffff; /* Warna latar belakang putih untuk baris genap */
+  }
+  
+  /* Mengubah warna teks di dalam sel-sel tabel menjadi putih */
+  .table-cell {
+    color: white; /* Warna teks putih untuk sel tabel */
+    background-color: #A0B0F8; /* Warna latar belakang biru untuk sel tabel */
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Mengubah warna ikon search menjadi hitam */
+  .search-icon {
+    padding: 8px;
+    color: #000000; /* Warna hitam untuk ikon */
+  }
+
+/* src/styles.css */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 40px; /* Sesuaikan tinggi navbar sesuai desain */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.navbar-logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}

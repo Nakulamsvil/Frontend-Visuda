@@ -1,0 +1,136 @@
+.hubungi-kami-container {
+    padding: 2rem;
+    background-color: #A0B0F8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; 
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.hubungi-kami-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 2rem; 
+}
+
+.hubungi-kami-text {
+    flex: 1; 
+    color: #333;
+}
+
+.hubungi-kami-text h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #004aad;
+}
+.hubungi-kami-text h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #0056b3;
+}
+
+.hubungi-kami-text p {
+    margin-bottom: 2rem; 
+    line-height: 1.6;
+    color: #333;
+}
+
+.hubungi-kami-form {
+    flex: 1; 
+}
+
+.hubungi-kami-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.hubungi-kami-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.hubungi-kami-form input,
+.hubungi-kami-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hubungi-kami-form input:focus,
+.hubungi-kami-form textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.hubungi-kami-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3 ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.faq-container {
+    margin-top: 30px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #e0e7ff;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #000;
+}
+
+.faq-answer {
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+    display: none; 
+}
+
+.faq-item.active .faq-answer {
+    display: block; 
+}
+
+.faq-answer-box {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #A0B0F8;
+    margin-top: 1rem; 
+}

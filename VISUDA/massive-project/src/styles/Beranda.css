@@ -1,0 +1,91 @@
+.Beranda {
+    background-color: #07175F;
+}
+.kolom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #07175F;
+    border-radius: 8px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.label .text-wrapper {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visuda-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.visuda-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .kolom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .visuda-image {
+        margin-top: 20px;
+    }
+
+    .playstore-button {
+        width: 150px; 
+        margin-top: 20px;
+      }
+      
+}
